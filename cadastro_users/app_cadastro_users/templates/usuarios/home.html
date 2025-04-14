@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Cadastro Usuários</title>
+</head>
+<body>
+  
+
+  <form action="{% url 'listagem_usuarios' %}" method="post">
+
+    {% csrf_token %}
+
+
+    <div class="container">
+      <h1>Cadastro de Usuários</h1>
+      <div class="components">
+          <div class="fields">
+              <label for="nome">Nome</label>
+              <input name="nome_post" type="text">
+          </div>
+          <div class="fields">
+              <label for="idade">Idade</label>
+              <input name="idade_post" type="text">
+          </div>
+          <button>Enviar</button>
+      </div>
+  </div>
+
+
+  </form>
+
+  <style>
+
+
+
+.container{
+    text-align: center;
+}
+
+.components{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.components input, .components button {
+  margin: 10px 0; 
+}
+
+  </style>
+
+</body>
+</html>
