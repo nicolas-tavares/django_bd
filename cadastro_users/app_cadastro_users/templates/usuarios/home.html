@@ -6,6 +6,15 @@
 
 
   <title>Cadastro Usuários</title>
+
+      <!-- GOOGLE FONTS-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+      <!-- FIM GOOGLE FONTS-->
+
 </head>
 <body>
   
@@ -26,7 +35,7 @@
               <label for="idade">Idade</label>
               <input name="idade_post" type="text">
           </div>
-          <button>Enviar</button>
+          <button class="botao">Enviar</button>
       </div>
   </div>
 
@@ -36,6 +45,10 @@
   <style>
 
 
+*{
+  font-family: 'Poppins', sans-serif;
+  background-color: aquamarine;
+}
 
 .container{
     text-align: center;
@@ -46,10 +59,27 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    font-size: 20px;
 }
 
 .components input, .components button {
   margin: 10px 0; 
+}
+
+.components input{
+  background-color: white;
+  font-size: 20px;
+}
+
+.botao{
+  border-radius: 10px ;
+  font-size: 15px;
+  background-color: white;
+  font-weight: 700;
+}
+
+.botao:hover{
+  transform: scale(1.05);
 }
 
   </style>
